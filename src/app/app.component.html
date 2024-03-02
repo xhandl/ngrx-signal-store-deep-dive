@@ -12,4 +12,10 @@
         </div>
     </div>
 
+    @if (!store.loading()) {
+        <todos-list/>
+    } @else {
+        <mat-spinner/>
+    }
+
 </div>

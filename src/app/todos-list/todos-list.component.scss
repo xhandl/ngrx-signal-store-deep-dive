@@ -1,0 +1,31 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 300px;
+}
+
+.todo-input {
+    width: 100%;
+}
+
+.toggle-group {
+    margin-bottom: 20px;
+}
+
+.todos-list {
+    width: 100%;
+    background-color: #ffffffdb;
+    border-radius: 4px;
+    margin-bottom: 20px;
+
+    &__item {
+        display: flex;
+        align-items: center;
+
+        &__delete {
+            margin-right: 10px;
+            cursor: pointer;
+        }
+    }
+}
