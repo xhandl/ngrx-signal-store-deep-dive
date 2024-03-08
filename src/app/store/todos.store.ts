@@ -9,12 +9,24 @@ type TodosState = {
     todos: Todo[];
     loading: boolean;
     filter: TodosFilter;
+    auth: {
+        user: {
+            name: string,
+            roles: string[]
+        }
+    };
 }
 
 const initialState: TodosState = {
     todos: [],
     loading: false,
-    filter: 'all'
+    filter: 'all',
+    auth: {
+        user: {
+            name: 'John',
+            roles: ['admin']
+        }
+    }
 };
 
 export const TodosStore = signalStore(
